@@ -36,7 +36,6 @@ libglew-dev
 freeglut3-dev
 freeglut3
 libssl1.1
-git
 libsdl2-2.0-0
 libsdl2-net-dev
 libsdl2-net-2.0-0
