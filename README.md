@@ -28,6 +28,11 @@ Building programs using `gcc` after sourcing `env-xxx.sh` will link the program 
 
 To restore your shell to the previous state, source `restore.sh`, and probably your bashrc again.
 
+### Rolling your own
+
+The scripts for building the runtime are pretty portable, though a bit odd. You can roll your own custom runtime by editing `packages.txt` and `make-runtime.sh`. 
+In the future this will be made easier.
+
 ### Notes
 
 This is pretty new, so it'll need a lot of tweaks. 
