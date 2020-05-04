@@ -1,6 +1,6 @@
 ## Quiver Runtime
 
-This is a blatant copy of the steam-runtime! This runtime can be used to build quiver reliably on any Linux distro.
+OPTIONAL Runtime for use with Quiver. Use this if you want to build quiver reliably on any Linux distro.
 
 ### Installation
 
