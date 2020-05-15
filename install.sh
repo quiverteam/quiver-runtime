@@ -33,17 +33,19 @@ tar xf $NAME
 
 echo "...done"
 
-read -p "Would you like to add env vars to your .bashrc? [yN]: " $YN
+read -p "Would you like to add env vars to your .bashrc? [yN]: " YN
 
 case $YN in
 	y*)
-		echo "export QUIVER_RUNTIME_$TYPE=$(pwd)/$(echo $NAME | sed "s/\.tgz//g")" > ~/.bashrc
+		echo "export QUIVER_RUNTIME_$TYPE=$(pwd)/$(echo $NAME | sed "s/\.tgz//g")" >> $HOME/.bashrc
 		;;
 	*)
 		;;
 esac
 
+# Fix up the links
+./fix_links.sh 
 
-echo "Run chown on $(echo $NAME | sed "s/\.tgz//g") in order for it to work"
+echo "Runtime installed!"
 
 popd 
